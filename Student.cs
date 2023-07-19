@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace _19JulyParameterisedConstructorEx
 {
@@ -11,6 +8,13 @@ namespace _19JulyParameterisedConstructorEx
         int id;
         string name;
         DateTime dob;
+        public Student()
+        {
+            Console.WriteLine("Default Constructor");
+            id = -1;
+            name = "not given";
+            dob = DateTime.Now;
+        }
         public Student(int id,string name,DateTime dob)
         {
             Console.WriteLine("Parameterised Constructor of Student");
